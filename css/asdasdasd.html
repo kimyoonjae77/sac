@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section .academy .academy_imgbox {
+            position: relative;
+            text-align: center;
+            width: 80%;
+            height: 80%;
+            margin: 0 auto;
+            margin-top: 100px;
+        }
+
+        section .academy .academy_imgbox div {
+            position: absolute;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            /* p보다 아래에 위치 */
+        }
+
+        section .academy .academy_imgbox p {
+            position: absolute;
+            z-index: 2;
+            /* div보다 위에 위치 */
+            color: white;
+            font-size: 1.3vw;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: none;
+            /* 기본적으로 숨김 */
+            pointer-events: none;
+            /* 텍스트에 마우스 이벤트가 적용되지 않도록 */
+        }
+
+        section .academy .academy_imgbox div:hover {
+            filter: brightness(0.6);
+            /* div에만 필터 적용 */
+        }
+
+        section .academy .academy_imgbox div:hover p {
+            display: block;
+            /* 호버 시 텍스트 표시 */
+        }
+    </style>
+</head>
+
+<body>
+    <section class="academy">
+        <div class="academy_imgbox">
+            <div class="img41" style="background-color: green;">
+                <p class="txt41">서양 미술사: 세기말과 20세기 전반</p>
+            </div>
+            <div class="img42" style="background-color: red;">
+                <p class="txt42">그림, 시대를 말하다 #3</p>
+            </div>
+            <div class="img43" style="background-image: url('your-image-url3.jpg');">
+                <p class="txt43">화정 김무호의&lt;사군자&gt;</p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

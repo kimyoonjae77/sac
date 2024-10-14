@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="js/index.js"></script>
+    <script src="https://kit.fontawesome.com/8273ee847b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=keyboard_arrow_down" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+        html,
+        body {
+            /* position: relative; */
+            /* height: 100%; */
+        }
+
+        body {
+
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            /* overflow: hidden; */
+            /* background-color: red; */
+        }
+
+        .swiper-slide {
+            width: 25%;
+            height: 16vw;
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-repeat: no-repeat;
+            margin: 0 10px;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            /* object-fit: contain; */
+        }
+
+        .swiper-slide.active {
+            /* object-fit: contain; */
+            /* width: 600%; */
+            width: 60% !important;
+            height: 16vw;
+            /* background-color: red; */
+            background-size: cover;
+            /* position: abs; */
+            transition: all 0.5s ease;
+        }
+
+        .swiper-slide.none_active {
+            width: 10% !important;
+            background-size: cover;
+        }
+
+        #tab-5 .swiper-slide,
+        #tab-6 .swiper-slide {
+            background-size: cover;
+        }
+
+        #tab-5 .swiper-slide.active {
+            background-size: cover;
+            width: 60% !important;
+        }
+
+        #tab-6 .swiper-slide.active {
+            background-size: cover;
+            width: 30% !important;
+            height: 16vw;
+        }
+
+        #tab-6 .swiper-slide.none_active {
+            width: 30% !important;
+            height: 16vw;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="logo1"><a href="#"><img src="images/sac_logo.svg" alt="logo"></a></h1>
+        <ul class="gnb">
+            <li><a href="#">오페라 하우스</a></li>
+            <li><a href="#">음악당</a></li>
+            <li><a href="#">미술관·박물관</a></li>
+            <li><a href="#">아카데미</a></li>
+            <li><a href="#">방문·이용</a></li>
+        </ul>
+        <ul class="lang_box">
+            <li><a href="index.html">KR</a></li>
+            <li><a href="#">ENG</a></li>
+        </ul>
+    </header>
+    <section>
+        <div class="main1">
+            <div class="fade_carousel">
+                <ul class="list">
+                    <li class="bg1 active1">
+                        <div class="main1_txt">
+                            <p>2024 예술의전당 토월전통연극&lt;햄릿&gt;
+                            </p>
+                            <p>CJ 토월극장 2024.10.18(금)~11.17(일)</p>
+                        </div>
+                    </li>
+                    <li class="bg2">
+                        <div class="main1_txt">
+                            <p>정명훈 &amp; 라 페니체 오케스트라 콘서트 오페라 &lt;라 트라비아타&gt;
+                            </p>
+                            <p>오페라극장 2024.10.04(금) 19:30
+                            </p>
+                        </div>
+                    </li>
+                    <li class="bg3">
+                        <div class="main1_txt">
+                            <p>
+                                성파 선예禪藝 특별전
+                            </p>
+                            <p>한가람디자인미술관 2024.9.28(금)~11.17(일)</p>
+                        </div>
+                    </li>
+                    <li class="bg4">
+                        <div class="main1_txt">
+                            <p>2024 대한민국은 공연중
+                            </p>
+                            <p>자유소 극장 2024.10.04(금)~11.10(일)</p>
+                        </div>
+                    </li>
+                </ul>
+                <button class="prev">
+                    <span class="material-symbols-outlined">
+                        arrow_back_ios
+                    </span>
+                </button>
+                <button class="next">
+                    <span class="material-symbols-outlined">
+                        arrow_forward_ios
+                    </span>
+                </button>
+            </div>
+        </div>
+        <div class="PaE">
+            <div class="title1">
+                <h2>공연 및 전시</h2>
+            </div>
+            <div class="css_carousel">
+                <ul class="list15">
+                    <li>
+                        <p class="date">10.05(토) 20:00</p>
+                        <p class="place">IBK챔버홀</p>
+                        <p class="title11">김수연 피아노 리사이틀</p>
+                        <div></div>
+                    </li>
+                    <li>
+                        <p class="date">11.16(토) 20:00</p>
+                        <p class="place">IBK챔버홀 </p>
+                        <p class="title11">테오팀 랑글로아 드 스와르테&amp;쥐스탱 테일러 듀오 콘서트</p>
+                        <div></div>
+                    </li>
+                    <li>
+                        <p class="date">10.05(토) 20:00</p>
+                        <p class="place">오페라극장</p>
+                        <p class="title11">예술의전당 보컬 마스터 시리즈Ⅲ-베이스바리톤 사무엘 윤</p>
+                        <div></div>
+                    </li>
+                    <li>
+                        <p class="date">03.24(일)~12.05(목)</p>
+                        <p class="place">인춘아트홀</p>
+                        <p class="title11">인춘아트홀 Special THE NEXT</p>
+                        <div></div>
+                    </li>
+                    <li>
+                        <p class="date">11월13(수) 19:30</p>
+                        <p class="place">콘서트홀</p>
+                        <p class="title11">2024 게자안다 콩쿠르 위너 콘서트 - 일리야 슈무클러 피아노 리사이틀</p>
+                        <div></div>
+                    </li>
+                    <li>
+                        <p class="date">10월.19(토) 14:00, 16:00</p>
+                        <p class="place">음악영재아카데미홀</p>
+                        <p class="title11">2024 예술의전당 음악영재아카데미 호른, 트럼펫 마스터클래스에 초대합니다.</p>
+                        <div></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="PaE_arrow_box">
+                <button class="left_arrow"><i class="fa-solid fa-arrow-left"></i></button>
+                <button class="right_arrow"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div>
+
+        <div class="place_guide">
+            <div class="title2">
+                <h2>예술의 전당 <span class="redp">공간 안내</span></h2>
+            </div>
+            <div class="place_btn_box">
+                <button class="tab_link active" data-tab="tab-1">공연장</button>
+                <button class="tab_link" data-tab="tab-2">전시장</button>
+                <button class="tab_link" data-tab="tab-3">야외공간</button>
+            </div>
+            <ul class="tab_menu">
+                <li id="tab-1" class="tab_contents active" data-tab="tab-1">
+                    <p class="place_explain">예술의 열정이 이어지는 문화공간! 예술가에게는 예술적 영감이 샘솟는 곳, 관객들에게는 잊지 못할 감동을 선사하는 문화융성의
+                        본산인 예술의전당의 공연장을 소개합니다.</p>
+                </li>
+                <li id="tab-2" class="tab_contents" data-tab="tab-2">
+                    <p class="place_explain">예술의 풍경을 담는 전시공간!
+                        다양한 스토리를 담은 작품을 즐기고 공유할 수 있는 공간을 통해 작가와 관객이 교류할 수 있는 장을 제공합니다.</p>
+                </li>
+                <li id="tab-3" class="tab_contents" data-tab="tab-3">
+                    <p class="place_explain">예술의 전당에서 만날 수 있는 즐거운 공간!
+                        오픈된 공간을 통해 자연, 건물, 사람과 합화하는 예술의 세계를 접할 수 있는 자리를 마련하였습니다.</p>
+                </li>
+            </ul>
+            <div class="content_txt">
+                <div class=" active" data-tab="tab-11">
+                    <h3>오페라극장</h3>
+                    <p>2200여 개의 객석을 갖춘 오페라하우스의 대표 극장</p>
+                    <h4>오페라하우스</h4>
+                    <p>관람석: 총2283석</p>
+                    <p>일반판매석: 1993석</p>
+                    <p>판매보유석: 290석</p>
+                    <div class="link_box">
+                        <p><a href="https://www.sac.or.kr/site/main/content/operaTheater">공간 소개</a></p>
+                        <p><a href="https://www.sac.or.kr/site/main/content/operaRentalProcedure">대관 안내</a></p>
+                    </div>
+                </div>
+                <div class="" data-tab="tab-12">
+                    <h3>CJ 토월극장</h3>
+                    <p>다양한 공연장르를 수용할 수 있는 1000석 규모의 다목적 공연장</p>
+                    <h4>오페라하우스</h4>
+                    <p>관람석: 총1004석</p>
+                    <p>일반판매석: 915석</p>
+                    <p>판매보유석: 89석</p>
+                    <div class="link_box">
+                        <p><a href="#">공간 소개</a></p>
+                        <p><a href="#">대관 안내</a></p>
+                    </div>
+                </div>
+                <div class="" data-tab="tab-13">
+                    <h3>자유소극장</h3>
+                    <p>무대와 객석의 벽을 과감히 허물어 실험적인 극장 구현</p>
+                    <h4>오페라하우스</h4>
+                    <p>관람석: 총241석</p>
+                    <p>일반판매석: 221석</p>
+                    <p>판매보유석: 20석</p>
+                    <div class="link_box">
+                        <p><a href="#">공간 소개</a></p>
+                        <p><a href="#">대관 안내</a></p>
+                    </div>
+                </div>
+                <div class="" data-tab="tab-14">
+                    <h3>콘서트홀</h3>
+                    <p>국내 최초 콘서트 전용홀로 지어진 연주장</p>
+                    <h4>음악당</h4>
+                    <p>관람석: 총2505석</p>
+                    <p>일반판매석: 2481석</p>
+                    <p>휠체어석: 24석</p>
+                    <div class="link_box">
+                        <p><a href="#">공간 소개</a></p>
+                        <p><a href="#">대관 안내</a></p>
+                    </div>
+                </div>
+                <div class="exhibit" data-tab="tab-21">
+                    <h3>한가람미술관</h3>
+                    <p>본관 전체3층 총 6개 전시실</p>
+                    <h4>전시공간</h4>
+                    <p>전시기간: 10:00~19:00</p>
+                    <p>휴관일: 매주 월요일</p>
+                    <div class="link_box">
+                        <p><a href="#">공간 소개</a></p>
+                        <p><a href="#">대관 안내</a></p>
+                    </div>
+                </div>
+                <div class="exhibit" data-tab="tab-22">
+                    <h3>한가람디자인미술관</h3>
+                    <p>본관 전체 3층 중 1층 총 3개 전시실</p>
+                    <h4>전시공간</h4>
+                    <p>전시기간: 10:00~19:00</p>
+                    <p>휴관일: 매주 월요일</p>
+                    <div class="link_box">
+                        <p><a href="#">공간 소개</a></p>
+                        <p><a href="#">대관 안내</a></p>
+                    </div>
+                </div>
+                <div class="exhibit" data-tab="tab-23">
+                    <h3>서울서예박물관</h3>
+                    <p>본관 전체 4층 중 2·3층 총 5개 전시실</p>
+                    <h4>전시공간</h4>
+                    <p>전시기간: 10:00~19:00</p>
+                    <p>휴관일: 매주월요일</p>
+                    <div class="link_box">
+                        <p><a href="#">공간 소개</a></p>
+                        <p><a href="#">대관 안내</a></p>
+                    </div>
+                </div>
+                <div class="exhibit" data-tab="tab-24">
+                    <h3>한가람미술관 제7전시실</h3>
+                    <p>다양한 장르의 작품을 소개할 수 있는 소규모 전시공간</p>
+                    <h4>전시공간</h4>
+                    <p>전시기간: 10:00~19:00</p>
+                    <p>휴관일: 매주월요일</p>
+                    <div class="link_box">
+                        <p><a href="#">공간 소개</a></p>
+                        <p><a href="#">대관 안내</a></p>
+                    </div>
+                </div>
+                <div class="originfo asd1 " data-tab="tab-31">
+                    <h3>음악광장</h3>
+                    <h4>음악당과 서울서예박물관 사이에 위치한 예술의전당의 중심광장</ㅓ>
+                        <p>음악당과 서울서예박물관 사이에 위치한 예술의전당의 중심광장이다.</p>
+                        <p>음악광장에는 예술의전당 문화광장의 최고 명소인 세계음악분수 (World Music Fountain)가 자리하고 있다.</p>
+                        <div class="link_box">
+                            <p><a href="#">공간 소개</a></p>
+                            <p><a href="#">대관 안내</a></p>
+                        </div>
+                </div>
+                <div class="originfo asd2" data-tab="tab-32">
+                    <h3>세계음악분수</h3>
+                    <h4>밤이 되면 화려한 조명이 더해지면서 장관을 연출</h4>
+                    <p>2002년 가동을 시작한 세계음악분수는 예술의전당이 도심 속 휴식공간으로 사랑 받으며</p>
+                    <p>특히 밤시간에 화려한 조명과 어우러져 장관을 연출한다.</p>
+                    <div class="link_box">
+                        <p><a href="#">공간 소개</a></p>
+                        <p><a href="#">대관 안내</a></p>
+                    </div>
+                </div>
+                <div class="originfo asd3" data-tab="tab-33">
+                    <h3>계단광장</h3>
+                    <h4>다양한 행사와 이벤트가 진행되는 열린 공간</h4>
+                    <p>아트마켓, 야외페스티벌, 하절기 시즌 야외카페운영 등</p>
+                    <p>다양한 행사와 이벤트가 진행되는 열린 공간이다.</p>
+                    <p>아마추어 아티스트들의 발표의 장으로도 활용된다.</p>
+                    <div class="link_box">
+                        <p><a href="#">공간 소개</a></p>
+                        <p><a href="#">대관 안내</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-all">
+                <div id="tab-4" class="swiper mySwiper tab_contents active" data-tab="tab-1">
+                    <div class="swiper-wrapper">
+                        <div data-tab="tab-11" class="swiper-slide active"
+                            style="background-image: url(/images/perform_main1.gif);"></div>
+                        <div data-tab="tab-12" class="swiper-slide none_active"
+                            style="background-image: url(/images/perform_main2.gif);"></div>
+                        <div data-tab="tab-13" class="swiper-slide none_active"
+                            style="background-image: url(/images/perform_main3.gif);"></div>
+                        <div data-tab="tab-14" class="swiper-slide none_active"
+                            style="background-image: url(/images/perform_main4.gif);"></div>
+                    </div>
+                </div>
+                <div id="tab-5" class="swiper mySwiper tab_contents " data-tab="tab-2">
+                    <div class="swiper-wrapper">
+                        <div data-tab="tab-21" class="swiper-slide active"
+                            style="background-image: url(/images/exhibit_main1.gif);">
+                        </div>
+                        <div data-tab="tab-22" class="swiper-slide none_active"
+                            style="background-image: url(/images/exhibit_main2.gif);">
+                        </div>
+                        <div data-tab="tab-23" class="swiper-slide none_active"
+                            style="background-image: url(/images/exhibit_main3.gif);">
+                        </div>
+                        <div data-tab="tab-24" class="swiper-slide none_active"
+                            style="background-image: url(/images/exhibit_main4.gif);">
+                        </div>
+                    </div>
+                </div>
+                <div id="tab-6" class="swiper mySwiper tab_contents" data-tab="tab-3">
+                    <div class="swiper-wrapper">
+                        <div data-tab="tab-31" class="swiper-slide active"
+                            style="background-image: url(/images/orginfo_img1-1.gif);">
+                        </div>
+                        <div data-tab="tab-32" class="swiper-slide none_active"
+                            style="background-image: url(/images/orginfo_img2-3.gif);">
+                        </div>
+                        <div data-tab="tab-33" class="swiper-slide none_active"
+                            style="background-image: url(/images/orginfo_img3-3.gif);">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+            <!-- <script>
+                var swiper = new Swiper(".mySwiper", {
+                    // slidesPerView: 4,
+                    // spaceBetween: 10,
+                    // centeredSlides: true,
+
+                });
+            </script> -->
+        </div>
+        <div class="faq">
+            <div class="faq_left">
+                <div class="title3">
+                    <h2>예술의 전당 <span class="redp">자주묻는 소식</span></h2>
+                </div>
+                <div class="tab_group">
+                    <ul class="tab_menu1">
+                        <button class="tab_link1 active" data-tab="41">공연</button>
+                        <button class="tab_link1" data-tab="42">전시</button>
+                        <button class="tab_link1" data-tab="43">예매</button>
+                        <button class="tab_link1" data-tab="44">환불/취소</button>
+                        <button class="tab_link1" data-tab="45">사이트이용</button>
+                    </ul>
+                </div>
+                <div class="tab_menu22">
+                    <div class="tab_contents1 active" data-tab="41">
+                        <div>
+                            <h2 class="m_title">미취학 어린이도 공연장 입장이 가능한가요?<span class="material-symbols-outlined">
+                                    keyboard_arrow_down
+                                </span><span class="material-symbols-outlined hide1">
+                                    keyboard_arrow_up
+                                </span></h2>
+                            <div class="m_txt  img1">
+                                예술의전당 공연은 8세 이상부터 관람 가능합니다. <br>
+                                보호자가 동반하는 경우에도 8세 미만의 어린이는 공연장 내 입장이 불가합니다. <br>
+                                모든 공연은 각 공연의 관람 가능 연령을 따르고 있으므로 공연 상세페이지 확인을 부탁드립니다.
+                            </div>
+                        </div>
+                        <div>
+                            <h2 class="m_title">공연 프로그램이나 공식MD를 구입하고 싶습니다.<span class="material-symbols-outlined">
+                                    keyboard_arrow_down
+                                </span><span class="material-symbols-outlined hide1">
+                                    keyboard_arrow_up
+                                </span></h2>
+                            <div class="m_txt img1">
+                                공연 당일 해당 공연장 판매처에서 구입하실 수 있습니다.<br>
+                                이미 종료한 공연의 경우에는 해당 공연 주최측에 문의하시면 됩니다.<br>
+                                주최측 연락처는 해당 공연의 상세정보를 참고해주시기 바랍니다.
+                            </div>
+                        </div>
+                        <div>
+                            <h2 class="m_title">공연장에 몇 시까지 도착해야 하나요?<span class="material-symbols-outlined">
+                                    keyboard_arrow_down
+                                </span><span class="material-symbols-outlined hide1">
+                                    keyboard_arrow_up
+                                </span></h2>
+                            <div class="m_txt img1">
+                                적어도 공연시작 30분 전에 도착하여 티켓을 발권 받으시고 화장실 등의 용무를 보신 후 여유 있게 객석 입장을 해주세요.<br>
+                                만석 공연의 경우 객석으로 입장하는 시간이 더 오래 걸릴 수 있으니 공연의 정시 시작을 위해 많은 협조 부탁드립니다.
+                            </div>
+                        </div>
+                        <div>
+                            <h2 class="m_title">원하는 공연을 간단하게 찾을 수 있는 방법이 있을까요?<span class="material-symbols-outlined">
+                                    keyboard_arrow_down
+                                </span><span class="material-symbols-outlined hide1">
+                                    keyboard_arrow_up
+                                </span></h2>
+                            <div class="m_txt img1">
+                                <a href="#">[진행/예정 프로그램] 바로가기</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab_contents1" data-tab="42">
+                        <div>
+                            <h2 class="m_title">전시 관련 도록을 구입하고 싶습니다.<span class="material-symbols-outlined">
+                                    keyboard_arrow_down
+                                </span><span class="material-symbols-outlined hide1">
+                                    keyboard_arrow_up
+                                </span></h2>
+                            <div class="m_txt  img1">
+                                전시관람 당일 해당 전시장 판매처에서 구입하실 수 있습니다. <br>
+                                이미 종료된 전시의 경우에는 해당 전시 주최측에 문의하시면 됩니다. <br>
+                                주최측 연락처는 해당 전시의 상세정보를 참고해주시기 바랍니다.
+                            </div>
+                        </div>
+                        <div>
+                            <h2 class="m_title">공휴일에도 전시를 볼 수 있나요? 전시장 입장은 언제부터 가능한가요?<span
+                                    class="material-symbols-outlined">
+                                    keyboard_arrow_down
+                                </span><span class="material-symbols-outlined hide1">
+                                    keyboard_arrow_up
+                                </span></h2>
+                            <div class="m_txt img1">
+                                전시에 따라 차이는 있을 수 있습니다만, 매주 월요일에는 휴관합니다.<br>
+                                입장은 전시가 끝나기 한 시간 전까지 가능합니다.<br>
+                                명절연휴 등은 각 전시별로 운영여부가 다르므로 예술의전당 홈페이지 또는 전시 주최측에 문의해 주시기 바랍니다. <br>
+                                <a href="#"> [전시장안내] 바로가기</a>
+                            </div>
+                        </div>
+                        <div>
+                            <h2 class="m_title">전시장 안으로 음료 및 음식물을 가지고 들어갈 수 있나요?<span class="material-symbols-outlined">
+                                    keyboard_arrow_down
+                                </span><span class="material-symbols-outlined hide1">
+                                    keyboard_arrow_up
+                                </span></h2>
+                            <div class="m_txt img1">
+                                전시장 안으로 음료 및 음식물을 가지고 입장하실 수 없습니다.<br>
+                                전시장 밖에 휴게시설이 갖춰져 있으니, 이 공간을 이용해 주시기 바랍니다.
+                            </div>
+                        </div>
+                        <div>
+                            <h2 class="m_title">전시장 안에서 촬영이 가능한가요?<span class="material-symbols-outlined">
+                                    keyboard_arrow_down
+                                </span><span class="material-symbols-outlined hide1">
+                                    keyboard_arrow_up
+                                </span></h2>
+                            <div class="m_txt img1">
+                                전시에 따라 다르므로 해당 전시실 입구의 안내원에게 문의하시거나 <br>
+                                방문하시기 전 주최측에 문의해보시는 것이 좋습니다. <br>
+                                주최측 연락처는 해당 전시의 상세정보를 참고해주시기 바랍니다. <br>
+
+                                사진촬영이 가능한 경우에도 전시품의 보호를 위하여 <br>
+                                플래시 사용을 엄격히 금지하고 있으니 주의를 부탁드립니다.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab_contents1" data-tab="43">
+                        <div>
+                            <h2 class="m_title">티켓 예매시 예매수수료는 얼마인가요?<span class="material-symbols-outlined">
+                                    keyboard_arrow_down
+                                </span><span class="material-symbols-outlined hide1">
+                                    keyboard_arrow_up
+                                </span></h2>
+                            <div class="m_txt  img1">
+                                예술의전당에서 예매하시는 모든 공연의 예매수수료는 무료입니다.
+                            </div>
+                        </div>
+                        <div>
+                            <h2 class="m_title">티켓 예매는 어떻게 하나요?<span class="material-symbols-outlined">
+                                    keyboard_arrow_down
+                                </span><span class="material-symbols-outlined hide1">
+                                    keyboard_arrow_up
+                                </span></h2>
+                            <div class="m_txt img1">
+                                티켓예매 서비스는 예술의전당 회원으로 가입하신 후 이용이 가능하며, 공연ㆍ전시 > 진행/예정 프로그램 에서 예매하실 수 있습니다.<br>
+                                <a href="#"> [티켓 예매 안내] 바로가기</a><br>
+                                또한 예매 과정에 대한 보다 자세한 내용은 아래 예매 방법 페이지에서 안내받으실 수 있습니다. <br>
+                                <a href="#"> [예매 방법] 바로가기</a>
+                            </div>
+                        </div>
+                        <div>
+                            <h2 class="m_title">예매내역 확인은 어떻게 하나요?<span class="material-symbols-outlined">
+                                    keyboard_arrow_down
+                                </span><span class="material-symbols-outlined hide1">
+                                    keyboard_arrow_up
+                                </span></h2>
+                            <div class="m_txt img1">
+                                회원님께서 예매하신 내역은 마이페이지>티켓예매내역에서 확인하실 수 있습니다.<br>
+                                <a href="#"> [마이페이지] 바로가기</a>
+                            </div>
+                        </div>
+                        <div>
+                            <h2 class="m_title">회원이 아니더라도 티켓 예매가 가능한가요?<span class="material-symbols-outlined">
+                                    keyboard_arrow_down
+                                </span><span class="material-symbols-outlined hide1">
+                                    keyboard_arrow_up
+                                </span></h2>
+                            <div class="m_txt img1">
+                                비회원은 티켓 예매가 불가능합니다. <br>
+                                예술의전당 홈페이지 무료 혹은 유료회원으로 가입하신 후 <br>
+                                예술의전당 홈페이지를 통해 별도 수수료 없이 예매가능하며<br>
+                                유료회원 가입 시 다양한 추가혜택을 받으실 수 있습니다. <br>
+                                <a href="#"> [회원가입] 바로가기</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab_contents1" data-tab="44">
+                        <div>
+                            <h2 class="m_title">예매 취소시 수수료는 얼마인가요?<span class="material-symbols-outlined">
+                                    keyboard_arrow_down
+                                </span><span class="material-symbols-outlined hide1">
+                                    keyboard_arrow_up
+                                </span></h2>
+                            <div class="m_txt  img1">
+                                예매 취소 수수료는 상단 메뉴의 환불/변경 안내에서 보다 자세한 내용을 확인해 주시길 부탁드립니다. <br>
+                                <a href="#">[환불/변경 안내] 바로가기</a>
+                            </div>
+                        </div>
+                        <div>
+                            <h2 class="m_title">예매한 티켓의 취소는 어떻게 하나요?<span class="material-symbols-outlined">
+                                    keyboard_arrow_down
+                                </span><span class="material-symbols-outlined hide1">
+                                    keyboard_arrow_up
+                                </span></h2>
+                            <div class="m_txt img1">
+                                티켓 구매 시 결제한 수단으로만 환불됩니다.<br>
+                                티켓에 초대권, 초대교환권, 특판권, 기획사 판매 등으로 명시된 티켓은 환불이나 취소가 되지 않습니다.<br>
+                                타 예매처로 예매한 경우 해당 예매처로 직접 문의하시기 바랍니다. <br>
+                                <a href="#"> [환불·변경 안내] 바로가기</a>
+                            </div>
+                        </div>
+                        <div>
+                            <h2 class="m_title">예매취소내역 확인은 어떻게 하나요?<span class="material-symbols-outlined">
+                                    keyboard_arrow_down
+                                </span><span class="material-symbols-outlined hide1">
+                                    keyboard_arrow_up
+                                </span></h2>
+                            <div class="m_txt  img1">
+                                취소하신 예매내역은 회원님의 계정으로 로그인 하신 뒤에 마이페이지>티켓예매내역에서 확인 가능합니다. <br>
+                                <a href="#"> [마이페이지] 바로가기</a>
+                            </div>
+                        </div>
+                        <div>
+                            <h2 class="m_title">티켓 예매 취소 후 환불은 어떻게 되나요?<span class="material-symbols-outlined">
+                                    keyboard_arrow_down
+                                </span><span class="material-symbols-outlined hide1">
+                                    keyboard_arrow_up
+                                </span></h2>
+                            <div class="m_txt img1">
+                                입장권 환불 및 취소는 티켓 예매시 선택한 결제수단으로만 가능합니다.
+                                <a href="#">[환불·변경 안내] 바로가기</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab_contents1" data-tab="45">
+                        <div>
+                            <h2 class="m_title">1:1 상담문의 답변은 어디서 확인할 수 있나요?<span class="material-symbols-outlined">
+                                    keyboard_arrow_down
+                                </span><span class="material-symbols-outlined hide1">
+                                    keyboard_arrow_up
+                                </span></h2>
+                            <div class="m_txt img1">
+                                마이페이지 > 참여와활동 > 나의상담문의에서 확인하실 수 있습니다.<br>
+                                <a href="#">[나의상담문의] 바로가기</a>
+                            </div>
+                        </div>
+                        <div>
+                            <h2 class="m_title">식사를 할 수 있는 곳이 있나요?<span class="material-symbols-outlined">
+                                    keyboard_arrow_down
+                                </span><span class="material-symbols-outlined hide1">
+                                    keyboard_arrow_up
+                                </span></h2>
+                            <div class="m_txt img1">
+                                예술의전당에는 음료 및 샌드위치나 디저트, 한식 등 다양한 음식을 즐길 수 있는 레스토랑과 카페가 마련되어 있으며<br>
+                                위치를 비롯한 자세한 정보는 이용안내 > 입점매장 을 참고 부탁드립니다.<br>
+                                <a href="#">[입점매장] 바로가기</a>
+                            </div>
+                        </div>
+                        <div>
+                            <h2 class="m_title">아이디(ID), 비밀번호를 잊어버렸어요.<span class="material-symbols-outlined">
+                                    keyboard_arrow_down
+                                </span><span class="material-symbols-outlined hide1">
+                                    keyboard_arrow_up
+                                </span></h2>
+                            <div class="m_txt img1">
+                                로그인 페이지에 있는 “아이디 찾기”와 “비밀번호 찾기”를 이용해 주십시오. <br>
+                                휴대폰 또는 아이핀 인증을 통해 아이디를 찾거나 임시비밀번호를 받으실 수 있습니다.
+                            </div>
+                        </div>
+                        <div>
+                            <h2 class="m_title">[로그인] ID와 비밀번호를 잊어버렸습니다. 찾기를 했는데 SMS가 오지 않습니다.<span
+                                    class="material-symbols-outlined">
+                                    keyboard_arrow_down
+                                </span><span class="material-symbols-outlined hide1">
+                                    keyboard_arrow_up
+                                </span></h2>
+                            <div class="m_txt img1">
+                                회원 정보에 휴대전화 번호가 예전 사용하던 번호로 저장되어 있다면 ID 찾기나 비밀번호찾기로 임시비밀번호를 받을 수 없습니다.<br>
+                                1:1 상담문의나 서비스플라자(월:09:00~18:00/화-일:09:00~20:00 (연중무휴))로 연락 부탁드립니다.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="faq_right">
+                <div class="imgbox"></div>
+            </div>
+        </div>
+        <div class="academy">
+            <!-- overflow hidden -->
+            <div class="title4">
+                <h2>예술의 전당 <span class="redp">아카데미</span></h2>
+            </div>
+            <div class="cir cir1"></div>
+            <div class="cir cir2"></div>
+            <div class="cir cir3"></div>
+            <div class="academy_imgbox">
+                <div class="img41">
+                    <p class="txt41">서양 미술사:세기말과 20세기 전반</p>
+                </div>
+                <div class="img42">
+                    <p class="txt42">그림, 시대를 말하다 #3</p>
+                </div>
+                <div class="img43">
+                    <p class="txt43">화정 김무호의&lt;사군자&gt;</p>
+                </div>
+            </div>
+        </div>
+        <div class="sns_line">
+            <div class="title5">
+                <p>Enjoy Sac With</p>
+                <div>
+                    <a href="#"><img src="/images/sns01.png" alt=""></a>
+                    <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <ul class="footer_gnb">
+            <li><a href="#">기관소개</a></li>
+            <li><a href="#">사이트맵</a></li>
+            <li><a href="#">정보공개</a></li>
+            <li><a href="#">이용약관·정책</a></li>
+            <li><a href="#">보도자료</a></li>
+            <li><a href="#">유실물</a></li>
+            <li><a href="#">1:1문의</a></li>
+        </ul>
+        <ul class="footer_second">
+            <li>대표자:장형준</li>
+            <li>사업자등록번호: 214-82-00264</li>
+            <li>통신판매업신고: 서초 제 0706호</li>
+        </ul>
+        <p class="footer_third">
+            주소: (우) 06757 서울시 서초구 남부순환로 2406 예술의전당
+        </p>
+    </footer>
+</body>
+
+</html>
