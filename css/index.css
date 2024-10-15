@@ -42,6 +42,7 @@ header {
     display: flex;
     justify-content: space-around;
     height: 5vw;
+    min-height: 55px;
     /* z-index: 1; */
 }
 
@@ -58,7 +59,9 @@ header .gnb {
 
 header .gnb>li {
     width: 20%;
+    min-width: 95px;
     height: 5vw;
+
     line-height: 5vw;
     text-align: center;
 }
@@ -79,6 +82,7 @@ header .gnb>li>a {
 
 header .lang_box {
     display: flex;
+    align-items: center;
 }
 
 header .lang_box>li {
@@ -153,6 +157,7 @@ section .main1 .list .bg1 {
 section .main1 .list .bg2 {
     background-image: url(../images/main2.gif);
     background-position: 0 -150px;
+    background-color: black;
 }
 
 section .main1 .list .bg3 {
@@ -162,6 +167,7 @@ section .main1 .list .bg3 {
 section .main1 .list .bg4 {
     background-image: url(../images/main4.png);
     background-position: 0 -100px;
+    background-color: white;
 }
 
 section .main1 .main1_txt {
@@ -180,11 +186,11 @@ section .main1 li:nth-child(4) .main1_txt p {
 }
 
 section .main1 .main1_txt p:nth-child(1) {
-    font-size: 1.5vw;
+    font-size: 20pt;
 }
 
 section .main1 .main1_txt p:nth-child(2) {
-    font-size: 1.2vw;
+    font-size: 15pt;
 }
 
 
@@ -224,6 +230,7 @@ section .fade_carousel button span {
 section .PaE {
     width: 100%;
     height: 60vw;
+    /* min-height: 700px; */
     position: relative;
     background-color: #f1f0eb;
 }
@@ -248,7 +255,7 @@ section .PaE .title1 h2 {
 
 section .PaE .css_carousel {
     width: 100%;
-    padding-top: 200px;
+    padding-top: 10%;
     overflow: hidden;
 }
 
@@ -265,11 +272,11 @@ section .PaE .css_carousel .list15 li {
 
     /* width: calc(100% / 3); */
 
-    flex-basis: 30%;
+    flex-basis: calc(100% / 3);
     /* 3개의 항목이 화면에 보일 때 */
 
 
-    margin: 0px 60px;
+    /* margin: 0px 60px; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -301,8 +308,10 @@ section .PaE .css_carousel .list15 li div {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
+    width: 25vw;
     height: 35vw;
+    /* min-width: 200px; */
+    /* min-height: 350px; */
     border-radius: 15pt;
 }
 
@@ -356,8 +365,8 @@ section .place_guide .title2 {
     height: 5%;
     text-align: center;
     font-size: 1.3vw;
-    margin-top: 150px;
-    margin-bottom: 50px;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 section .place_guide .place_btn_box {
@@ -367,13 +376,13 @@ section .place_guide .place_btn_box {
     /* background-color: #514a4a; */
     display: flex;
     justify-content: space-around;
-    margin-bottom: 50px;
+    margin-bottom: 5%;
 }
 
 section .place_guide .place_btn_box button {
     width: calc(100% / 3);
     font-size: 1.2vw;
-    margin: 0 10px;
+    margin: 0 3%;
     background-color: #f1f0eb;
     color: rgb(0, 0, 0);
 }
@@ -554,7 +563,7 @@ section .faq_left {
 }
 
 section .title3 {
-    padding: 50px 0;
+    padding: 5% 0;
     text-align: center;
     font-size: 1.2vw;
 }
@@ -578,7 +587,7 @@ section .tab_menu {
 section .faq .tab_group {
     width: 100%;
     margin: 0 auto;
-    margin-bottom: 50px;
+    margin-bottom: 5%;
     /* background-color: red; */
 }
 
@@ -607,7 +616,7 @@ section .m_title {
     height: 3.5vw;
     line-height: 3.5vw;
     margin: 3px;
-    margin-left: 2%;
+    margin-left: 5%;
     cursor: pointer;
     font-size: 1.2vw;
     font-weight: 100;
@@ -649,6 +658,7 @@ section .m_txt {
     visibility: hidden;
     font-size: 1vw;
     font-weight: 100;
+
 }
 
 section .m_txt.show {
@@ -657,7 +667,7 @@ section .m_txt.show {
     height: auto;
     opacity: 1;
     visibility: visible;
-    margin-left: 2%;
+    margin-left: 5%;
     /* box-sizing: border-box; */
 }
 
@@ -687,7 +697,7 @@ section .faq_right .imgbox {
 section .academy {
     width: 100%;
     height: 50vw;
-    padding-top: 150px;
+    padding-top: 5%;
     position: relative;
     overflow: hidden;
 }
@@ -715,27 +725,27 @@ section .academy .cir {
 }
 
 section .academy .cir1 {
-    width: 1200px;
-    height: 1200px;
+    width: 70vw;
+    height: 70vw;
     /* display: block; */
-    left: -300px;
-    top: -20px;
+    left: -15vw;
+    top: -3vw;
 }
 
 section .academy .cir2 {
-    width: 680px;
-    height: 680px;
+    width: 35vw;
+    height: 35vw;
     /* display: block; */
-    right: -350px;
-    top: -350px;
+    right: -15vw;
+    top: -25vw;
 }
 
 section .academy .cir3 {
-    width: 880px;
-    height: 880px;
+    width: 45vw;
+    height: 45vw;
     /* display: block; */
-    right: -150px;
-    top: 70px;
+    right: -13vw;
+    top: 4vw;
 }
 
 section .academy .academy_imgbox {
@@ -745,7 +755,7 @@ section .academy .academy_imgbox {
     height: 80%;
     /* background-color: red; */
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 5%;
 }
 
 section .academy .academy_imgbox div {
@@ -879,25 +889,29 @@ section .sns_line {
 }
 
 section .title5 {
-    width: 100%;
+    width: 60%;
     height: 100px;
     display: flex;
     justify-content: center;
+    margin: 0 auto;
     /* align-items: center; */
 
 }
 
 section .title5>p {
-    font-size: 1.6vw;
+    font-size: 1.5vw;
     color: white;
     /* background-color: paleturquoise; */
+    width: 20%;
     height: 100px;
     line-height: 100px;
+    text-align: center;
 }
 
 section .title5>div {
     display: flex;
     align-items: center;
+    width: 80%;
     height: 100px;
     margin-left: 50px;
     /* line-height: 100px; */
@@ -919,13 +933,17 @@ section .title5>div>a:hover {
 }
 
 section .title5>div>a>img {
-    width: 150px;
+    width: 100%;
     height: 100%;
     object-fit: contain;
 }
 
+section .title5>div>a {
+    width: 25%;
+}
+
 section .title5>div>a>i {
-    width: 150px;
+    width: 100%;
     height: 100%;
     line-height: 100px;
     text-align: center;
@@ -973,15 +991,64 @@ footer .footer_third {
     color: rgb(159, 154, 154);
 }
 
-@media all and (min-width: 935px) and (max-width:1210px) {
+@media all and (max-width:1024px) {
+    section .PaE {
+        height: 65vw;
+    }
+
+    section .PaE .css_carousel {
+        padding-top: 15%;
+    }
+
+    section .place_guide .title2 {
+        margin-top: 2.5%;
+        margin-bottom: 2.5%;
+    }
+
+    section .place_guide .place_btn_box {
+        margin-bottom: 2.5%;
+    }
+
     section .place_guide {
-        /* padding-bottom: 5%; */
+        height: 40vw;
+    }
+
+    section .title3 {
+        padding: 2.5% 0;
+    }
+
+    section .faq .tab_group {
+        margin-bottom: 2.5%;
+    }
+
+    section .title5>p {
+        /* font-size: 12pt; */
+        /* width: 113px; */
     }
 }
 
+@media all and (max-width:810px) {
+    header .gnb>li {
+        min-width: 0;
+    }
 
-@media all and (min-width: 768px) and (max-width:934px) {
-    section .place_guide {
-        /* padding-bottom: 20%; */
+    header .gnb>li>a {
+        font-size: 1.6vw;
+    }
+
+    header .lang_box>li>a {
+        font-size: 1.6vw;
+    }
+
+    section .main1 .main1_txt p:nth-child(1) {
+        font-size: 2.2vw;
+    }
+
+    section .main1 .main1_txt p:nth-child(2) {
+        font-size: 2vw;
+    }
+
+    section .main1 li:nth-child(3) .main1_txt p {
+        color: rgb(194, 181, 181);
     }
 }
