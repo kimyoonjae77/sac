@@ -193,90 +193,40 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // const list15 = document.querySelector(".list15");
-    // const list15Items = document.querySelectorAll(".list15 li");
-    // const itemWidth =
-    //     list15Items[0].offsetWidth +
-    //     parseFloat(getComputedStyle(list15Items[0]).marginRight);
-    // const totalItems = list15Items.length;
-    // let isAnimating = false;
-
-    // // 처음에 모든 아이템을 가로로 정렬
-    // // list15.style.width = itemWidth * totalItems + "px";
-
-    // // 다음 버튼 클릭 시
-    // document
-    //     .querySelector(".left_arrow")
-    //     .addEventListener("click", function () {
-    //         if (!isAnimating) {
-    //             isAnimating = true;
-    //             list15.style.transition = "margin-left 0.6s ease";
-    //             list15.style.marginLeft = `-${itemWidth}px`;
-
-    //             list15.addEventListener(
-    //                 "transitionend",
-    //                 function () {
-    //                     // 첫 번째 항목을 마지막으로 이동
-    //                     list15.appendChild(list15.firstElementChild);
-    //                     // 이동 후, margin-left를 원래대로 초기화
-    //                     list15.style.transition = "none";
-    //                     list15.style.marginLeft = "0px";
-    //                     isAnimating = false;
-    //                 },
-    //                 { once: true }
-    //             );
-    //         }
-    //     });
-
-    // // 이전 버튼 클릭 시
-    // document
-    //     .querySelector(".right_arrow")
-    //     .addEventListener("click", function () {
-    //         if (!isAnimating) {
-    //             isAnimating = true;
-    //             // 마지막 항목을 첫 번째로 이동하고 즉시 margin-left를 변경
-    //             list15.insertBefore(
-    //                 list15.lastElementChild,
-    //                 list15.firstElementChild
-    //             );
-    //             list15.style.transition = "none";
-    //             list15.style.marginLeft = `-${itemWidth}px`;
-
-    //             // 그런 다음 슬라이드가 왼쪽에서 오른쪽으로 이동
-    //             setTimeout(function () {
-    //                 list15.style.transition = "margin-left 0.6s ease";
-    //                 list15.style.marginLeft = "0px";
-    //             }, 20);
-
-    //             list15.addEventListener(
-    //                 "transitionend",
-    //                 function () {
-    //                     isAnimating = false;
-    //                 },
-    //                 { once: true }
-    //             );
-    //         }
-    //     });
-
     const carousel = document.querySelector(".css_carousel .list15");
     const leftArrow = document.querySelector(".left_arrow");
     const rightArrow = document.querySelector(".right_arrow");
 
-    let currentIndex2 = 0;
+    // 현재 인덱스 초기화
+    let currentIndex2 = 0; // 슬라이드 인덱스 (0, -100, -200)
 
-    // 오른쪽 버튼 클릭 시
+    // 오른쪽 버튼 클릭 시 (왼쪽으로 이동)
     rightArrow.addEventListener("click", () => {
-        if (currentIndex2 > -100) {
-            currentIndex2 -= 100;
-            carousel.style.marginLeft = currentIndex2 + "%";
+        if (currentIndex2 > -200) {
+            // 인덱스가 -200보다 클 때
+            currentIndex2 -= 100; // 인덱스 감소
+            carousel.style.marginLeft = currentIndex2 + "%"; // 슬라이드 이동
+        } else {
+            // 마지막 슬라이드에 도달하면 첫 번째 아이템을 마지막으로 이동
+            const firstItem = carousel.firstElementChild;
+            carousel.appendChild(firstItem); // 첫 번째 아이템을 마지막으로 이동
+            currentIndex2 = 0; // 인덱스 초기화
+            carousel.style.marginLeft = currentIndex2 + "%"; // 슬라이드 이동
         }
     });
 
-    // 왼쪽 버튼 클릭 시
+    // 왼쪽 버튼 클릭 시 (오른쪽으로 이동)
     leftArrow.addEventListener("click", () => {
         if (currentIndex2 < 0) {
-            currentIndex2 += 100;
-            carousel.style.marginLeft = currentIndex2 + "%";
+            // 인덱스가 0보다 작을 때
+            currentIndex2 += 100; // 인덱스 증가
+            carousel.style.marginLeft = currentIndex2 + "%"; // 슬라이드 이동
+        } else {
+            // 첫 번째 슬라이드에 도달하면 마지막 아이템을 첫 번째로 이동
+            const lastItem = carousel.lastElementChild;
+            carousel.insertBefore(lastItem, carousel.firstChild); // 마지막 아이템을 첫 번째로 이동
+            currentIndex2 = -200; // 인덱스 초기화
+            carousel.style.marginLeft = currentIndex2 + "%"; // 슬라이드 이동
         }
     });
 });

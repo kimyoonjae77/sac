@@ -284,7 +284,7 @@ section .PaE .css_carousel {
 }
 
 section .PaE .css_carousel .list15 {
-    width: 200%;
+    width: 300%;
     display: flex;
     justify-content: space-around;
     /* justify-content: flex-start; */
@@ -368,6 +368,18 @@ section .PaE .css_carousel .list15 li:nth-child(6) div {
     background-image: url(../images/pae_6.gif);
 }
 
+section .PaE .css_carousel .list15 li:nth-child(7) div {
+    background-image: url(../images/pae_7.gif);
+}
+
+section .PaE .css_carousel .list15 li:nth-child(8) div {
+    background-image: url(../images/pae_8.gif);
+}
+
+section .PaE .css_carousel .list15 li:nth-child(9) div {
+    background-image: url(../images/pae_9.gif);
+}
+
 section .PaE .PaE_arrow_box {
     position: absolute;
     right: 3%;
@@ -377,6 +389,7 @@ section .PaE .PaE_arrow_box {
 section .PaE .PaE_arrow_box button {
     margin: 0px 20px;
 }
+
 
 section .PaE .PaE_arrow_box i {
     font-size: 2.2vw;
