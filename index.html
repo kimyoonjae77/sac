@@ -37,7 +37,7 @@
         }
 
         .swiper-slide {
-            width: 25%;
+            width: 10%;
             height: 16vw;
             text-align: center;
             font-size: 18px;
@@ -46,7 +46,9 @@
             justify-content: center;
             align-items: center;
             background-repeat: no-repeat;
-            margin: 0 10px;
+            margin: 0 0.3%;
+            cursor: pointer;
+            background-size: cover;
         }
 
         .swiper-slide img {
@@ -70,6 +72,7 @@
         .swiper-slide.none_active {
             width: 10% !important;
             background-size: cover;
+            transition: all 0.5s ease;
         }
 
         #tab-5 .swiper-slide,
@@ -82,11 +85,16 @@
             width: 60% !important;
         }
 
+        #tab-6 .swiper-slide {
+            width: 30% !important;
+        }
+
         #tab-6 .swiper-slide.active {
             background-size: cover;
-            width: 30% !important;
+            /* width: 30% !important; */
             height: 16vw;
         }
+
 
         #tab-6 .swiper-slide.none_active {
             width: 30% !important;
@@ -209,7 +217,6 @@
                 <button class="right_arrow"><i class="fa-solid fa-arrow-right"></i></button>
             </div>
         </div>
-
         <div class="place_guide">
             <div class="title2">
                 <h2>예술의 전당 <span class="redp">공간 안내</span></h2>
@@ -328,18 +335,20 @@
                 </div>
                 <div class="originfo asd1 " data-tab="tab-31">
                     <h3>음악광장</h3>
-                    <h4>음악당과 서울서예박물관 사이에 위치한 예술의전당의 중심광장</ㅓ>
-                        <p>음악당과 서울서예박물관 사이에 위치한 예술의전당의 중심광장이다.</p>
-                        <p>음악광장에는 예술의전당 문화광장의 최고 명소인 세계음악분수 (World Music Fountain)가 자리하고 있다.</p>
-                        <div class="link_box">
-                            <p><a href="#">공간 소개</a></p>
-                            <p><a href="#">대관 안내</a></p>
-                        </div>
+                    <h4>음악당과 서울서예박물관 사이에 위치한 예술의전당의 중심광장</h4>
+                    <p>음악당과 서울서예박물관 사이에 위치한 예술의전당의 중심광장이다.</p>
+                    <p>음악광장에는 예술의전당 문화광장의 최고 명소인</p>
+                    <p>세계음악분수 (World Music Fountain)가 자리하고 있다.</p>
+                    <div class="link_box">
+                        <p><a href="#">공간 소개</a></p>
+                        <p><a href="#">대관 안내</a></p>
+                    </div>
                 </div>
                 <div class="originfo asd2" data-tab="tab-32">
                     <h3>세계음악분수</h3>
                     <h4>밤이 되면 화려한 조명이 더해지면서 장관을 연출</h4>
                     <p>2002년 가동을 시작한 세계음악분수는 예술의전당이 도심 속 휴식공간으로 사랑 받으며</p>
+                    <p>서울의 명소로 자리매김하는 촉매가 되고 있다.</p>
                     <p>특히 밤시간에 화려한 조명과 어우러져 장관을 연출한다.</p>
                     <div class="link_box">
                         <p><a href="#">공간 소개</a></p>

@@ -465,7 +465,7 @@ section .place_guide .content_txt {
     width: 30%;
     /* height: 0px; */
     text-align: center;
-    padding: 0%;
+    /* padding: 1%; */
     margin-left: 2.5%;
     box-sizing: border-box;
     /* display: none; */
@@ -478,7 +478,8 @@ section .place_guide .content_txt>div {
     height: 0;
     overflow: hidden;
     font-size: 0.8vw;
-    /* padding: 50px 0; */
+    /* padding: 4% 0%; */
+    box-sizing: border-box;
 }
 
 section .place_guide .content_txt>div.active {
@@ -487,16 +488,19 @@ section .place_guide .content_txt>div.active {
 }
 
 section .place_guide .content_txt h3 {
-    margin-top: 1%;
+    padding-top: 5%;
+    padding-bottom: 1%;
 }
 
-section .place_guide .content_txt .exhibit h3 {
-    margin-top: 4%;
-}
+
 
 section .place_guide .content_txt div>p {
     color: #514a4a;
-    margin: 2% 0;
+    /* margin: 2% 0; */
+}
+
+section .place_guide .content_txt div>p:nth-child(5) {
+    margin: 1% 0;
 }
 
 section .place_guide .content_txt h4 {
@@ -504,7 +508,7 @@ section .place_guide .content_txt h4 {
     width: 30%;
     height: 1.8vw;
     line-height: 1.8vw;
-    margin: auto;
+    margin: 1% auto;
     color: white;
     opacity: 0.8;
 }
@@ -513,38 +517,35 @@ section .place_guide .content_txt .originfo h4 {
     width: 80%;
 }
 
-section .place_guide .content_txt .originfo.asd1 h3 {
-    margin-top: 3%;
-    margin-bottom: 3%;
+section .place_guide .content_txt .originfo>p {
+    width: 100%;
+    font-size: 0.75vw;
 }
 
-section .place_guide .content_txt .originfo.asd1 p {
-    margin: 2% 0;
+section .place_guide .content_txt .originfo>p:nth-child(3) {
+    margin-bottom: 1%;
 }
 
-section .place_guide .content_txt .originfo.asd2 h3 {
-    margin-top: 5%;
-    margin-bottom: 5%;
-}
 
-section .place_guide .content_txt .originfo.asd2 p {
-    margin: 2% 0;
-}
 
-section .place_guide .content_txt .originfo.asd2 .link_box {
-    margin-top: 3%;
-}
-
-section .place_guide .content_txt .originfo.asd3 h3 {
-    margin-top: 5%;
-    margin-bottom: 3%;
-}
 
 
 
 section .place_guide .content_txt .link_box {
     display: flex;
-    padding: 0 10%;
+    justify-content: space-around;
+    margin-top: 1%;
+    margin-bottom: 5%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 40%;
+    align-items: center;
+
+}
+
+section .place_guide .content_txt .exhibit .link_box,
+section .place_guide .content_txt .originfo .link_box {
+    margin-top: 1.5vw;
 }
 
 section .place_guide .content_txt .link_box p {
@@ -554,8 +555,15 @@ section .place_guide .content_txt .link_box p {
     box-sizing: border-box;
     border: 1px solid #514a4a;
     color: #514a4a;
+    margin: 1% 0;
+}
 
+section .place_guide .content_txt .link_box p:nth-child(1) {
+    margin-right: 5px;
+}
 
+section .place_guide .content_txt .link_box p:hover {
+    background-color: rgba(0, 0, 0, 0.444);
 }
 
 section .place_guide .content_txt .link_box p a {
@@ -650,6 +658,11 @@ section .m_title {
     font-size: 1.2vw;
     font-weight: 100;
     position: relative;
+    /* font-weight: 100; */
+}
+
+section .m_title.active {
+    /* font-weight: bold; */
 }
 
 section .faq .tab_menu22 .tab_contents1 span {
@@ -681,11 +694,10 @@ section .m_txt {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: rgba(255, 255, 255, 0.106);
-    color: rgb(255, 255, 255);
-    font-size: 1.3vw;
+    color: rgba(255, 255, 255, 0.74);
     opacity: 0;
     visibility: hidden;
-    font-size: 1vw;
+    font-size: 0.9vw;
     font-weight: 100;
     padding: 1%;
     /* font-weight: bold; */

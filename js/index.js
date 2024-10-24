@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const slideCount = slides.length;
 
     let currentIndex = 0;
-    let autoslide;
+    let autoSlide;
 
     function showSlide(index) {
         slides.forEach((slide, i) => {
@@ -76,7 +76,10 @@ document.addEventListener("DOMContentLoaded", () => {
             contentItems.forEach(function (item) {
                 item.classList.remove("active");
             });
-
+            slides3.forEach(function (slides3) {
+                slides3.classList.remove("active");
+                slides3.classList.remove("none_active");
+            });
             // 모든 viewTabs에서 active, none_active 제거 후 처리
             viewTabs.forEach(function (viewTab) {
                 let correspondingTabID = tabID
@@ -174,6 +177,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 t.nextElementSibling.style.height = "0px"; // 초기 높이 설정
                 t.nextElementSibling.style.opacity = "0"; // 초기 opacity 설정
                 t.nextElementSibling.style.visibility = "hidden"; // 초기 visibility 설정
+                // title.style.fontWeight = "100";
             });
 
             // 클릭된 제목이 활성화되지 않은 경우 활성화
@@ -184,6 +188,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     title.nextElementSibling.scrollHeight + "px"; // 내용 높이 조정
                 title.nextElementSibling.style.opacity = "1"; // opacity 설정
                 title.nextElementSibling.style.visibility = "visible"; // visibility 설정
+                // title.style.fontWeight = "bold";
             }
         });
     });
