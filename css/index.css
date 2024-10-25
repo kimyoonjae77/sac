@@ -1214,11 +1214,11 @@ footer .footer_third {
     }
 
     header .gnb>li>a {
-        font-size: 1.6vw;
+        font-size: 1.4vw;
     }
 
     header .lang_box>li>a {
-        font-size: 1.6vw;
+        font-size: 1.4vw;
     }
 
     section .main1 .main1_txt p:nth-child(1) {
@@ -1247,5 +1247,11 @@ footer .footer_third {
 
     section .title5>p {
         font-size: 1.4vw;
+    }
+}
+
+@media all and (max-width:400px) {
+    section .title5>p {
+        font-size: 1.2vw;
     }
 }
