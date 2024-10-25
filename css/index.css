@@ -217,11 +217,11 @@ section .fade_carousel button {
 }
 
 section .fade_carousel .prev {
-    left: 150px;
+    left: 10%;
 }
 
 section .fade_carousel .next {
-    right: 150px;
+    right: 10%;
     transform: rotate(180deg);
 }
 
