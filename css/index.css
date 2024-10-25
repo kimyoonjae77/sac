@@ -256,7 +256,7 @@ section .fade_carousel button>div>div:nth-child(2) {
 section .PaE {
     width: 100%;
     height: 60vw;
-    /* min-height: 700px; */
+    min-height: 400px;
     position: relative;
     background-color: #f1f0eb;
 }
@@ -328,7 +328,8 @@ section .PaE .css_carousel .list15 li p:nth-child(2) {
 
 section .PaE .css_carousel .list15 li p:nth-child(3) {
     font-size: 0.9vw;
-    height: 4vw;
+    height: 6vw;
+    min-height: 40px;
     width: 25vw;
     text-align: center;
 }
@@ -1055,30 +1056,84 @@ footer .footer_third {
     color: rgb(159, 154, 154);
 }
 
+@media all and (min-width:738px)and (max-width:1000px) {}
+
+@media all and (max-width:1650px) {
+    section .PaE .css_carousel .list15 li p:nth-child(1) {
+        font-size: 16pt;
+    }
+
+    section .PaE .css_carousel .list15 li p:nth-child(2) {
+        font-size: 14pt;
+    }
+
+    section .PaE .css_carousel .list15 li p:nth-child(3) {
+        font-size: 11pt;
+    }
+}
+
 @media all and (max-width:1024px) {
     section .PaE {
-        height: 65vw;
+        height: 70vw;
+        /* min-height: 600px; */
     }
 
     section .PaE .css_carousel {
         padding-top: 15%;
     }
 
+
+
     section .place_guide .title2 {
-        margin-top: 2.5%;
-        margin-bottom: 2.5%;
+        /* margin-top: 2.5%;
+        margin-bottom: 2.5%; */
+        font-size: 2vw;
     }
 
     section .place_guide .place_btn_box {
-        margin-bottom: 2.5%;
+        /* margin-bottom: 2.5%; */
+        height: 10%;
     }
 
-    section .place_guide {
-        height: 40vw;
+    section .place_guide .place_btn_box button {
+        font-size: 1.9vw;
     }
 
-    section .title3 {
-        padding: 2.5% 0;
+    section .place_guide .content_txt h3 {
+        font-size: 2vw;
+        height: 40%;
+        /* background-color: red; */
+        padding-top: 10%;
+        padding-bottom: 0%;
+        /* line-height: ; */
+        box-sizing: border-box;
+    }
+
+    section .place_guide .content_txt>div>p {
+        display: none;
+    }
+
+    section .place_guide .content_txt h4 {
+        display: none;
+        margin: 0 auto;
+    }
+
+    section .place_guide .content_txt .link_box {
+        margin-bottom: 0%;
+        height: 50%;
+    }
+
+    section .place_guide .content_txt .exhibit .link_box,
+    section .place_guide .content_txt .originfo .link_box {
+        margin-top: 0vw;
+    }
+
+    section .place_guide .content_txt .link_box p {
+        /* height: 3.5vw; */
+        height: 5vw;
+        line-height: 5vw;
+        font-size: 1.2vw;
+        margin: 0 0;
     }
 
     section .faq {
@@ -1172,5 +1227,17 @@ footer .footer_third {
 
     section .main1 li:nth-child(3) .main1_txt p {
         color: rgb(194, 181, 181);
+    }
+
+    section .PaE .css_carousel .list15 li p:nth-child(1) {
+        font-size: 10pt;
+    }
+
+    section .PaE .css_carousel .list15 li p:nth-child(2) {
+        font-size: 8pt;
+    }
+
+    section .PaE .css_carousel .list15 li p:nth-child(3) {
+        font-size: 7pt;
     }
 }
