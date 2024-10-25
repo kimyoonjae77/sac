@@ -398,6 +398,10 @@ section .PaE .PaE_arrow_box i {
     font-size: 2.2vw;
 }
 
+section .PaE .disp_none_br {
+    display: none;
+}
+
 /* --------------------place_guide======================= */
 section .place_guide {
     width: 100%;
@@ -1056,7 +1060,7 @@ footer .footer_third {
     color: rgb(159, 154, 154);
 }
 
-@media all and (min-width:738px)and (max-width:1000px) {}
+
 
 @media all and (max-width:1650px) {
     section .PaE .css_carousel .list15 li p:nth-child(1) {
@@ -1069,6 +1073,12 @@ footer .footer_third {
 
     section .PaE .css_carousel .list15 li p:nth-child(3) {
         font-size: 11pt;
+    }
+}
+
+@media all and (max-width:1400px) {
+    section .PaE .disp_none_br {
+        display: block;
     }
 }
 
@@ -1243,6 +1253,7 @@ footer .footer_third {
 
     section .PaE .css_carousel .list15 li p:nth-child(3) {
         font-size: 7pt;
+        margin-bottom: 10px;
     }
 
     section .title5>p {
