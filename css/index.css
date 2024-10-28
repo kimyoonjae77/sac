@@ -1249,11 +1249,11 @@ footer .footer_third {
     }
 
     header .gnb>li>a {
-        font-size: 1.2vw;
+        /* font-size: 1.2vw; */
     }
 
     header .lang_box>li>a {
-        font-size: 1.2vw;
+        /* font-size: 1.2vw; */
     }
 
     section .PaE .title1 {
@@ -1301,7 +1301,7 @@ footer .footer_third {
 
 }
 
-@media all and (max-width:550px) {
+@media all and (max-width:500px) {
     header .logo1 {
         transform: scale(0.6);
     }
