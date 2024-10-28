@@ -1303,15 +1303,15 @@ footer .footer_third {
 
 @media all and (max-width:550px) {
     header .logo1 {
-        transform: scale(0.4);
+        transform: scale(0.6);
     }
 
     header .gnb>li {
-        min-width: 0px;
+        min-width: 25px;
     }
 
     header .gnb>li>a {
-        font-size: 3.5pt;
+        font-size: 4.5pt;
     }
 
     section .PaE .title1 {
