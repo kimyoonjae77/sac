@@ -1308,10 +1308,11 @@ footer .footer_third {
 
     header .gnb>li {
         min-width: 25px;
+        width: 45px;
     }
 
     header .gnb>li>a {
-        font-size: 4.5pt;
+        font-size: 5.5pt;
     }
 
     section .PaE .title1 {
