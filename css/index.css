@@ -1116,7 +1116,7 @@ footer .footer_third {
 
 
     section .place_guide .tab_menu {
-        margin-bottom: 4vw;
+        margin-bottom: 4.5vw;
     }
 
     section .place_guide .place_explain {
@@ -1287,7 +1287,7 @@ footer .footer_third {
 @media all and (max-width:500px) {
 
     header .gnb>li>a {
-        font-size: 1vw;
+        font-size: 0.8vw;
     }
 
     section .PaE .title1 {
@@ -1295,10 +1295,10 @@ footer .footer_third {
     }
 
     section .title5>p {
-        font-size: 0.7vw;
+        font-size: 0.5vw;
     }
 
     section .place_guide .content_txt .link_box p {
-        font-size: 0.6vw;
+        font-size: 0.5vw;
     }
 }
