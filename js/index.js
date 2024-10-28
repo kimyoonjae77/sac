@@ -242,4 +242,15 @@ document.addEventListener("DOMContentLoaded", () => {
             carousel.style.marginLeft = currentIndex2 + "%"; // 슬라이드 이동
         }
     });
+
+    function resize() {
+        const slides3 = document.querySelectorAll(".swiper-slide");
+        slide3.forEach(function (slide) {
+            if (slide.classList.contains("active")) {
+                slide.style.height = slide.scrollHeight + "px";
+            }
+        });
+    }
+
+    window.addEventListener("resize", resize);
 });
