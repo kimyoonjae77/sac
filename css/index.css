@@ -1308,7 +1308,7 @@ footer .footer_third {
     }
 
     header .gnb>li {
-        /* min-width: 25px; */
+        min-width: 25px;
         width: 65px;
     }
 
