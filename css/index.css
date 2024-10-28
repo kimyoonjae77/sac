@@ -1242,11 +1242,11 @@ footer .footer_third {
     }
 
     header .gnb>li>a {
-        font-size: 1.4vw;
+        font-size: 1.2vw;
     }
 
     header .lang_box>li>a {
-        font-size: 1.4vw;
+        font-size: 1.2vw;
     }
 
     section .PaE .title1 {
@@ -1280,11 +1280,15 @@ footer .footer_third {
     }
 
     section .title5>p {
-        font-size: 1.4vw;
+        font-size: 1.2vw;
+    }
+
+    section .place_guide .content_txt .link_box p {
+        font-size: 1vw;
     }
 }
 
-@media all and (max-width:550px) {
+@media all and (max-width:650px) {
 
     header .gnb>li>a {
         font-size: 1.2vw;
