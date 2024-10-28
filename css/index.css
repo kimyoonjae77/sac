@@ -1307,6 +1307,10 @@ footer .footer_third {
         display: none;
     }
 
+    header .gnb {
+        width: 60%;
+    }
+
     header .gnb>li {
         min-width: 25px;
         width: 65px;
