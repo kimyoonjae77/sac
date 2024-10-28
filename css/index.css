@@ -1303,7 +1303,7 @@ footer .footer_third {
 
 @media all and (max-width:550px) {
     header .logo1 {
-        transform: scale(0.6);
+        transform: scale(0.4);
     }
 
     header .gnb>li {
