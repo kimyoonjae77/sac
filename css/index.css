@@ -465,12 +465,17 @@ section .place_guide .tab_menu {
 
 section .place_guide .place_explain {
     width: 100%;
-    height: auto;
+    height: 1.5vw;
     /* background-color: blue; */
     text-align: center;
     /* margin: 0 auto; */
     font-size: 1.2vw;
 }
+
+section .place_guide .place_explain .ex_display {
+    display: none;
+}
+
 
 section .place_guide .tab_menu .tab_contents {
     display: none;
@@ -1109,6 +1114,19 @@ footer .footer_third {
         font-size: 1.9vw;
     }
 
+
+    section .place_guide .tab_menu {
+        margin-bottom: 4vw;
+    }
+
+    section .place_guide .place_explain {
+        font-size: 1.8vw;
+    }
+
+    section .place_guide .place_explain .ex_display {
+        display: block;
+    }
+
     section .place_guide .content_txt h3 {
         font-size: 2vw;
         height: 40%;
@@ -1231,6 +1249,11 @@ footer .footer_third {
         font-size: 1.4vw;
     }
 
+    section .PaE .title1 {
+        width: 30%;
+
+    }
+
     section .main1 .main1_txt p:nth-child(1) {
         font-size: 2.2vw;
     }
@@ -1262,7 +1285,20 @@ footer .footer_third {
 }
 
 @media all and (max-width:400px) {
-    section .title5>p {
+
+    header .gnb>li>a {
         font-size: 1.2vw;
+    }
+
+    section .PaE .title1 {
+        top: 0;
+    }
+
+    section .title5>p {
+        font-size: 0.9vw;
+    }
+
+    section .place_guide .content_txt .link_box p {
+        font-size: 1vw;
     }
 }
