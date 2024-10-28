@@ -1,4 +1,17 @@
 document.addEventListener("DOMContentLoaded", () => {
+    const hamIco = document.querySelector(".ham_ico");
+    const gnb2 = document.querySelector(".gnb2");
+
+    hamIco.addEventListener("click", function () {
+        if (gnb2) {
+            if (gnb2.style.display === "block") {
+                gnb2.style.display = "none";
+            } else {
+                gnb2.style.display = "block";
+            }
+        }
+    });
+
     const slides = document.querySelectorAll(".list li");
     const prevBtn = document.querySelector(".prev");
     const nextBtn = document.querySelector(".next");

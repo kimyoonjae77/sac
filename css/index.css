@@ -44,10 +44,14 @@ header {
     height: 5vw;
     min-height: 55px;
     /* z-index: 1; */
+    transition: all 0.3s ease;
+    position: relative;
 }
 
 header .logo1 {
     line-height: 5vw;
+    transition: all 0.3s ease;
+
 }
 
 header .gnb {
@@ -101,6 +105,63 @@ header .lang_box>li:nth-child(2)>a {
     color: rgb(169, 159, 159);
     font-weight: 0;
     display: block;
+}
+
+
+header .ham_all {
+    /* display: none; */
+    width: 100%;
+    height: 50000px;
+    position: absolute;
+    z-index: 11;
+    /* transform: translateY(-50%); */
+
+    /* display: none; */
+}
+
+header .ham_all .ham_ico i {
+    display: none;
+    position: absolute;
+    right: 3%;
+    top: 6vw;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 25pt;
+    z-index: 12;
+}
+
+header .ham_all .gnb2 {
+    display: none;
+    padding-top: 10vw;
+    /* background-color: red; */
+    /* width: 100px; */
+    position: absolute;
+    right: 0px;
+    top: 0vw;
+    /* height: 100vh; */
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.856);
+    /* padding-left: 500px; */
+
+}
+
+header .ham_all .gnb2 li {
+    /* width: 150px; */
+    /* height: 50px; */
+    text-align: center;
+    background-color: #f1f0eb;
+    position: relative;
+    /* right: -72%; */
+    padding: 4%;
+}
+
+header .ham_all .gnb2 li:hover {
+    background-color: #afaea9;
+}
+
+header .ham_all .gnb2 li a {
+    color: #161616;
 }
 
 /* section-------------------------------------------- */
@@ -659,6 +720,10 @@ section .faq .tab_menu1>button {
     margin: 0 5%;
     color: white;
     font-size: 1.2vw;
+}
+
+section .faq .tab_menu1>button.active {
+    color: #b20f12;
 }
 
 section .faq .tab_menu22 .tab_contents1 {
@@ -1249,6 +1314,17 @@ footer .footer_third {
 }
 
 @media all and (max-width:810px) {
+    header {
+        height: 10vw;
+        position: fixed;
+        z-index: 10;
+        width: 100%;
+    }
+
+    header .logo1 {
+        line-height: 12vw;
+    }
+
     header .gnb {
         display: none;
     }
@@ -1258,7 +1334,7 @@ footer .footer_third {
     }
 
     header .logo1 {
-        transform: scale(1.5);
+        transform: scale(1.2);
     }
 
     header .gnb>li {
@@ -1273,7 +1349,16 @@ footer .footer_third {
         font-size: 1.6vw;
     }
 
-    section .PaE {}
+    header .ham_all .ham_ico i {
+        display: block;
+    }
+
+    header .ham_all .gnb2 {
+        /* display: block; */
+        opacity: 0.8;
+    }
+
+
 
     section .PaE .title1 {
         width: 30%;
@@ -1321,10 +1406,15 @@ footer .footer_third {
 
 }
 
+@media all and (max-width:810px) {
+    header .logo1 {
+        line-height: 13vw;
+    }
+}
+
 @media all and (max-width:500px) {
     header .logo1 {
-        transform: scale(0.6);
-        /* display: none; */
+        line-height: 15vw;
     }
 
     header .gnb {
