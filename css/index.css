@@ -957,7 +957,6 @@ section .sns_line {
     background-color: #b20f12;
     /* text-align: center; */
     /* line-height: 100px; */
-
 }
 
 section .title5 {
@@ -1238,12 +1237,17 @@ footer .footer_third {
 }
 
 @media all and (max-width:810px) {
+
+    header .logo1 {
+        transform: scale(0.8);
+    }
+
     header .gnb>li {
         min-width: 0;
     }
 
     header .gnb>li>a {
-        font-size: 1.2vw;
+        font-size: 1.6vw;
     }
 
     header .lang_box>li>a {
@@ -1280,8 +1284,12 @@ footer .footer_third {
         margin-bottom: 10px;
     }
 
+    section .title5 {
+        width: 80%;
+    }
+
     section .title5>p {
-        font-size: 1.2vw;
+        font-size: 1.4vw;
     }
 
     section .place_guide .content_txt .link_box p {
@@ -1291,7 +1299,14 @@ footer .footer_third {
 
 }
 
-@media all and (max-width:650px) {
+@media all and (max-width:550px) {
+    header .logo1 {
+        transform: scale(0.6);
+    }
+
+    header .gnb>li {
+        min-width: 65px;
+    }
 
     header .gnb>li>a {
         font-size: 1.2vw;
