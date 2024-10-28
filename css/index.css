@@ -1284,7 +1284,7 @@ footer .footer_third {
     }
 }
 
-@media all and (max-width:500px) {
+@media all and (max-width:550px) {
 
     header .gnb>li>a {
         font-size: 0.8vw;
