@@ -20,6 +20,7 @@ button {
     background-color: transparent;
     border: none;
     cursor: pointer;
+
 }
 
 
@@ -272,7 +273,7 @@ section .fade_carousel button {
     transform: translateY(-50%);
     /* padding: 10px; */
     color: white;
-    z-index: 1;
+    z-index: 100;
     font-weight: 0;
 
 }
@@ -448,10 +449,12 @@ section .PaE .PaE_arrow_box {
     position: absolute;
     right: 3%;
     top: 10%;
+    z-index: 10000000000000000;
 }
 
 section .PaE .PaE_arrow_box button {
     margin: 0px 20px;
+
 }
 
 
@@ -487,6 +490,7 @@ section .place_guide .place_btn_box {
     display: flex;
     justify-content: space-around;
     margin-bottom: 5%;
+    z-index: 1000000;
 }
 
 section .place_guide .place_btn_box button {
