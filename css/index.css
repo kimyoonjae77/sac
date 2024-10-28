@@ -1149,6 +1149,7 @@ footer .footer_third {
     section .place_guide .content_txt .link_box {
         margin-bottom: 0%;
         height: 50%;
+        width: 80%;
     }
 
     section .place_guide .content_txt .exhibit .link_box,
@@ -1286,6 +1287,8 @@ footer .footer_third {
     section .place_guide .content_txt .link_box p {
         font-size: 1vw;
     }
+
+
 }
 
 @media all and (max-width:650px) {
