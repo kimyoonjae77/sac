@@ -1287,7 +1287,7 @@ footer .footer_third {
 @media all and (max-width:500px) {
 
     header .gnb>li>a {
-        font-size: 1.2vw;
+        font-size: 1vw;
     }
 
     section .PaE .title1 {
@@ -1295,10 +1295,10 @@ footer .footer_third {
     }
 
     section .title5>p {
-        font-size: 0.9vw;
+        font-size: 0.7vw;
     }
 
     section .place_guide .content_txt .link_box p {
-        font-size: 1vw;
+        font-size: 0.6vw;
     }
 }
