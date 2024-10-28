@@ -977,7 +977,7 @@ section .title5>p {
     height: 100%;
     /* margin-top: 50%; */
     /* transform: translateY(-50%); */
-    line-height: 350%;
+    line-height: 5vw;
     text-align: center;
 }
 
@@ -1115,11 +1115,13 @@ footer .footer_third {
 
 
     section .place_guide .tab_menu {
-        margin-bottom: 4.5vw;
+        margin-bottom: 7.5vw;
     }
 
     section .place_guide .place_explain {
         font-size: 1.8vw;
+        line-height: 1.5vw;
+
     }
 
     section .place_guide .place_explain .ex_display {
@@ -1318,6 +1320,7 @@ footer .footer_third {
 
     section .title5>p {
         font-size: 1.2vw;
+        /* line-height: 300%; */
     }
 
     section .place_guide .content_txt .link_box p {
