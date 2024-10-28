@@ -1253,7 +1253,7 @@ footer .footer_third {
     }
 
     header .lang_box>li>a {
-        font-size: 0.8vw;
+        font-size: 1.6vw;
     }
 
     section .PaE .title1 {
@@ -1307,12 +1307,16 @@ footer .footer_third {
     }
 
     header .gnb>li {
-        /* min-width: 25px; */
-        /* width: 45px; */
+        min-width: 25px;
+        width: 45px;
     }
 
     header .gnb>li>a {
-        /* font-size: 5.5pt; */
+        font-size: 5.5pt;
+    }
+
+    header .lang_box>li>a {
+        font-size: 5.5pt;
     }
 
     section .PaE .title1 {
