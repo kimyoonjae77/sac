@@ -1119,7 +1119,7 @@ footer .footer_third {
     }
 
     section .place_guide .place_explain {
-        font-size: 1.8vw;
+        font-size: 2.2vw;
         line-height: 1.5vw;
 
     }
@@ -1167,7 +1167,11 @@ footer .footer_third {
     }
 
     section .faq {
-        height: 65vw;
+        height: 85vw;
+    }
+
+    section .title3 {
+        font-size: 2.5vw;
     }
 
     section .faq .tab_group {
@@ -1186,13 +1190,13 @@ footer .footer_third {
     section .faq .tab_menu1>button {
         margin: 0 0%;
         color: white;
-        font-size: 2vw;
+        font-size: 3vw;
     }
 
     section .faq .tab_group {
         width: 80%;
         margin: 0 auto;
-        margin-bottom: 5%;
+        margin-bottom: 11%;
         /* background-color: red; */
     }
 
@@ -1200,13 +1204,13 @@ footer .footer_third {
         width: 90%;
         margin: 0 5%;
         margin-bottom: 2%;
-        font-size: 2.2vw;
+        font-size: 2.5vw;
     }
 
     section .m_txt {
         width: 100%;
         margin-bottom: 2%;
-        font-size: 1.8vw;
+        font-size: 2.4vw;
     }
 
 
@@ -1223,7 +1227,13 @@ footer .footer_third {
         width: 0%;
     }
 
+    section .academy .title4 {
+        font-size: 2.5vw;
+    }
 
+    section .academy .academy_imgbox p {
+        font-size: 1.9vw;
+    }
 
     section .title5>p {
         /* font-size: 12pt; */
@@ -1239,9 +1249,16 @@ footer .footer_third {
 }
 
 @media all and (max-width:810px) {
+    header .gnb {
+        display: none;
+    }
+
+    header .lang_box {
+        display: none;
+    }
 
     header .logo1 {
-        transform: scale(0.8);
+        transform: scale(1.5);
     }
 
     header .gnb>li {
@@ -1256,17 +1273,19 @@ footer .footer_third {
         font-size: 1.6vw;
     }
 
+    section .PaE {}
+
     section .PaE .title1 {
         width: 30%;
 
     }
 
     section .main1 .main1_txt p:nth-child(1) {
-        font-size: 2.2vw;
+        font-size: 3.2vw;
     }
 
     section .main1 .main1_txt p:nth-child(2) {
-        font-size: 2vw;
+        font-size: 3vw;
     }
 
     section .main1 li:nth-child(3) .main1_txt p {
@@ -1274,16 +1293,17 @@ footer .footer_third {
     }
 
     section .PaE .css_carousel .list15 li p:nth-child(1) {
-        font-size: 6.8pt;
+        /* font-size: 6.8pt; */
     }
 
     section .PaE .css_carousel .list15 li p:nth-child(2) {
-        font-size: 8pt;
+        /* font-size: 8pt; */
     }
 
     section .PaE .css_carousel .list15 li p:nth-child(3) {
-        font-size: 7pt;
-        margin-bottom: 10px;
+        /* font-size: 7pt; */
+        display: none;
+        /* margin-bottom: 10px; */
     }
 
     section .title5 {
